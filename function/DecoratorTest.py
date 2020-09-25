@@ -1,5 +1,9 @@
 from functools import reduce
 
+class foo:
+    pass
+
+
 def timed(fn):
     from time import perf_counter
     from functools import wraps
@@ -56,6 +60,3 @@ def fib_reduce(n):
                    , dummy,
                    initial)
     return fib_n[0]
-
-fib_reduce(400000)
-fib_loop(400000)
